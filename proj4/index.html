@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div id="alert" class="alert  alert-dismissible fade " role="alert">
+        <strong>Success</strong> Your form has been submitted successfully.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <div class="container">
+    </div>
+    <h1>Dragon Travel Desk</h1>
+
+    <form class="container">
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Name</label>
+            <input type="text" class="form-control " id="name" placeholder="Name">
+            <small style="font-size: 10px;" id="namevalild" class="invalid-feedback">Your username must be 2-10 character long and should start with a character.</small>
+        </div>
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Email">
+            <small style="font-size: 10px;" id="Email not valid" class="invalid-feedback">Email not valid</small>
+        </div>
+        <div class="form-group">
+            <label for="car">Select your car</label>
+            <select class="form-control" id="car">
+                <option>Maruti</option>
+                <option>audi</option>
+                <option>bmw</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="address">Enter your address</label>
+            <textarea class="form-control" id="address" rows="3"></textarea>
+
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Enter your phone.</label>
+            <input type="number" class="form-control" id="phone" rows="3"></input>
+            <small style="font-size: 10px;" id="phonevalild" class="invalid-feedback">Please enter a valid phone no .</small>
+            
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Any Other msg.</label>
+            <textarea class="form-control" id="msg" rows="3"></textarea>
+        </div>
+        <button id="submit" class="btn btn-primary" type="submit">Submit</button>
+    </form>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
